@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ramreserve</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar user-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo">🎫</div>
+                    <span>Ramreserve</span>
+                </div>
+                <div class="nav-links">
+                    <a href="home.html" class="active">🏠 Home</a>
+                    <a href="submit.html">➕ Submit Ticket</a>
+                    <a href="my-tickets.html">🎫 My Tickets</a>
+                    <a href="room-calendar.html">📅 Room Calendar</a>
+                    <a href="about.html">👥 About</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <button class="btn btn-outline-light" onclick="logout()">🚪 Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="hero-section">
+                <h1 class="gradient-text">Welcome to Ramreserve</h1>
+                <p class="hero-subtitle">Submit reservation requests for equipment and facilities to IT Resource Office or Business Management Office</p>
+                <a href="submit.html" class="btn btn-primary btn-lg">✨ Submit a Reservation Request</a>
+            </div>
+
+            <div class="how-it-works">
+                <h2 class="gradient-text">How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Submit Request</h3>
+                        <p>Fill out the reservation form with your requirements</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Review Process</h3>
+                        <p>The relevant office will review your request</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Get Confirmation</h3>
+                        <p>Receive approval and confirmation for your reservation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="departments-grid">
+                <div class="department-card it-card">
+                    <div class="card-icon">💻</div>
+                    <h3>IT Resource Office</h3>
+                    <p>Reserve equipment and studios</p>
+                    <div class="feature-grid">
+                        <div class="feature">📷 Cameras</div>
+                        <div class="feature">🔊 Speakers</div>
+                        <div class="feature">💡 Lights</div>
+                        <div class="feature">🎬 Studios</div>
+                    </div>
+                </div>
+
+                <div class="department-card bmo-card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Business Management Office</h3>
+                    <p>Reserve rooms and events</p>
+                    <div class="feature-grid">
+                        <div class="feature">🚪 Meeting Rooms</div>
+                        <div class="feature">📅 Events</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/theme.js"></script>
+    <script>checkAuth();</script>
+</body>
+</html>
